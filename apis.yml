@@ -1,23 +1,50 @@
 aid: marketaxess
 name: MarketAxess
-description: 'MarketAxess is a company surfaced via the API Evangelist harvest backlog (source: market-data)
-  and added to the network as a stub for full-pipeline profiling.'
+description: MarketAxess provides a leading electronic trading platform for corporate bond markets, offering deep liquidity, pre‑trade data, AI‑powered
+  insights, and real‑time market depth analysis. Clients can access pricing, trade execution, and post‑trade services across investment‑grade,
+  high‑yield, and emerging‑market bonds, supported by advanced analytics and a modern X‑Pro workflow.
 url: https://raw.githubusercontent.com/api-evangelist/marketaxess/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:market-data
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-21 (modular-v1; was harvest)
 specificationVersion: '0.20'
 created: '2026-09-21'
 modified: '2026-09-21'
 tags:
 - Company
-apis: []
+- Finance
+- Trading
+- Bonds
+- API
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: https://trust.marketaxess.com/
+- type: DeveloperPortal
+  url: https://portal.marketaxess.com/
+- type: DomainSecurity
+  url: security/marketaxess-domain-security.yml
 - type: Website
   url: https://www.marketaxess.com/
+- type: Support
+  url: https://www.marketaxess.com/contact-us
+- type: Pricing
+  url: https://www.marketaxess.com/price/axess-all
+apis:
+- name: MarketAxess GraphQL API
+  description: GraphQL API for MarketAxess platform
+  humanURL: https://portal.marketaxess.com/
+  baseURL: https://www.marketaxess.com
+  properties: []
+  aid: marketaxess:marketaxess-graphql-api
+x-enrichment:
+  date: '2026-09-21'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
