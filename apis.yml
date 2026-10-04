@@ -44,7 +44,6 @@ apis:
 - name: MarketAxess GraphQL API
   description: GraphQL API for MarketAxess platform
   humanURL: https://portal.marketaxess.com/
-  baseURL: https://www.marketaxess.com
   properties: []
   aid: marketaxess:marketaxess-graphql-api
 x-enrichment:
