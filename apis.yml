@@ -10,7 +10,7 @@ x-tier: profiled
 x-tier-reason: enrichment pass 2026-09-21 (modular-v1; was harvest)
 specificationVersion: '0.20'
 created: '2026-09-21'
-modified: '2026-09-21'
+modified: '2026-10-06'
 tags:
 - Company
 - Finance
@@ -28,6 +28,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- url: https://www.marketaxess.com/rss.xml
+  type: BlogRSS
 - type: TrustCenter
   url: https://trust.marketaxess.com/
 - type: DeveloperPortal
